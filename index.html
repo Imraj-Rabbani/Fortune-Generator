@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortune Box</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white text-slate-900">
+  <main class="max-w-5xl mx-auto px-4 pt-8">
+    <section class="flex items-start gap-6">
+
+      <div id="fortuneBox"
+           class="flex-1 border-4 border-green-600 bg-yellow-200 rounded-sm">
+        <p id="fortuneText"
+           class="m-4 text-2xl font-semibold text-red-700">
+          True wisdom comes not from knowledge, but from understanding.
+        </p>
+      </div>
+
+
+      <div class="grid grid-cols-2 gap-4">
+
+        <button class="w-16 h-12 rounded-xl shadow-sm bg-white place-items-center"
+                data-btn="green">
+          <span class="block w-12 h-8 rounded-md bg-green-600"></span>
+        </button>
+        <button class="w-16 h-12 rounded-xl shadow-sm bg-white place-items-center"
+                data-btn="yellow">
+          <span class="block w-12 h-8 rounded-md bg-yellow-400"></span>
+        </button>
+        <button class="w-16 h-12 rounded-xl shadow-sm bg-white  place-items-center"
+                data-btn="blue">
+          <span class="block w-12 h-8 rounded-md bg-blue-600"></span>
+        </button>
+        <button class="w-16 h-12 rounded-xl shadow-sm bg-white place-items-center"
+                data-btn="orange">
+          <span class="block w-12 h-8 rounded-md bg-orange-500"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
